@@ -1,4 +1,4 @@
-dev::
+dev:
 	npm install
 
 package: dev
