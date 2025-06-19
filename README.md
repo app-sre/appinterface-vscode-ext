@@ -1,7 +1,11 @@
 # appinterface-vscode-extension README
 
-This extension provides validation and autocompletion capabilities for [App-Interface](https://github.com/app-sre/app-interface) manifests. To enable it,
-just select the App-Interface language in the Language Mode Selector.
+This extension provides validation and autocompletion capabilities for [App-Interface](https://github.com/app-sre/app-interface) manifests. To enable it, just select the App-Interface language in the Language Mode Selector.
+
+The extension is not published in the VS Code marketplace, to use it:
+
+* Build the package with `make package`
+* Install it with `code --install-extension appinterface-schemas-validator/appinterface-vscode-extension-0.0.1.vsix`
 
 ## Features
 
