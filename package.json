@@ -10,30 +10,11 @@
         "Other"
     ],
     "activationEvents": [
-        "onLanguage:App-Interface"
+        "workspaceContains:schemas/metaschema-1.json",
+        "onLanguage:yaml"
     ],
     "main": "./dist/extension.js",
-    "contributes": {
-        "languages": [
-            {
-                "id": "App-Interface",
-                "aliases": [
-                    "App Interface"
-                ],
-                "extensions": [
-                    ".yaml",
-                    ".yml"
-                ]
-            }
-        ],
-        "grammars": [
-            {
-                "language": "App-Interface",
-                "scopeName": "source.yaml",
-                "path": "./syntaxes/YAML.tmLanguage.json"
-            }
-        ]
-    },
+    "contributes": {},
     "repository": "https://github.com/app-sre/appinterface-vscode-extension",
     "scripts": {
         "vscode:prepublish": "npm run package",
