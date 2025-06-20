@@ -10,7 +10,7 @@
         "Other"
     ],
     "activationEvents": [
-        "workspaceContains:schemas/metaschema-1.json",
+        "workspaceContains:**/schemas/metaschema-1.json",
         "onLanguage:yaml"
     ],
     "main": "./dist/extension.js",

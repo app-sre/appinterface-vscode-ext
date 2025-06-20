@@ -6,6 +6,7 @@ The extension is not published in the VS Code marketplace, to use it:
 
 * Build the package with `make package`
 * Install it with `code --install-extension appinterface-vscode-extension-0.0.1.vsix`
+* The extension is automatically enabled when the language selected is `YAML` and the root folder contains a `schemas/metaschema-1.json` file.
 
 ## Features
 
