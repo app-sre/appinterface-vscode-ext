@@ -2,7 +2,7 @@ dev:
 	npm install
 
 package: dev
-	vsce package
+	npx vsce package
 
 publish:
-	vsce publish
+	npx vsce publish
