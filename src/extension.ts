@@ -220,7 +220,7 @@ export function activate(context: ExtensionContext) {
   const diagnosticCollection =
     languages.createDiagnosticCollection("appinterface");
   workspace.onDidChangeTextDocument((event) => {
-    if (isUserEditInWorkspace(event)) {
+    if (isUserEditInWorkspace(event) && event.document.languageId === "yaml") {
       const workspaceFolder = workspace
         .getWorkspaceFolder(event.document.uri)
         ?.uri.path.toString();
